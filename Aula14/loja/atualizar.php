@@ -18,7 +18,10 @@
     
 
     if ($stmt->execute()) {
-        echo "Produto atualizado com sucesso!";
+        //echo "Produto atualizado com sucesso!";
+        
+        header("location: listar.php");
+        echo "<script>alert('Produto atualizado com sucesso!');</script>";
     } else {
         echo "Erro ao atualizar produto.";
     }
